@@ -31,7 +31,8 @@
             </div>
 
             <!-- Login Form -->
-            <form class="space-y-6">
+            <form class="space-y-6" method="POST" action="{{ route('login') }}">
+                @csrf
                 <!-- Username Field -->
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -39,7 +40,9 @@
                     </div>
                     <input 
                         type="text" 
-                        placeholder="Username"
+                        name="email"
+                        placeholder="Email"
+                        required
                         class="w-full bg-white/10 border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm transition-all duration-300 hover:bg-white/20"
                     >
                 </div>
@@ -51,7 +54,9 @@
                     </div>
                     <input 
                         type="password" 
+                        name="password"
                         placeholder="Password"
+                        required
                         class="w-full bg-white/10 border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm transition-all duration-300 hover:bg-white/20"
                     >
                 </div>
@@ -100,6 +105,6 @@
         </div>
     </div>
 
-    <script src="../js/login.js"></script>
+      <script src="../js/login.js"></script>
 </body>
 </html>
