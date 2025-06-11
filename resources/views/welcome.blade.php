@@ -26,6 +26,7 @@
                     <i class="fas fa-tint text-white text-2xl"></i>
                 </div>
                 <h1 class="text-3xl font-bold text-white mb-2">WFWVI</h1>
+                <p class="text-blue-200 text-sm font-medium">WORLDS FIRST WATER VENTURE INC.</p>
                 <p class="text-blue-200 text-sm font-medium">WATER BILLING MANAGEMENT</p>
             </div>
 
